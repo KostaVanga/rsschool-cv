@@ -1,39 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kostya Berezin CV</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--This is First Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
-
-
-    <header>
-        <h1>Hello, I'm Kostya Berezin</h1>
+    <header class="header" id="header">
+      <div class="height_of_header" >
+        <section class="nav_section">
+          <div class="header_nav">
+            <nav>
+              <ul>
+                <li><a class="name_companie_nav" href="#header">GON<small>e</small>B<small>er</small>&#174;</a></li>
+                <li><a class="about_me_nav" href="#about_me">About me</a></li>
+                <li><a class="skills_nav" href="#skills">Skills</a></li>
+                <li><a class="contacts_nav" href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="my_name_section">
+          <div class="background_for_my_name"></div>
+          <img src="./images/my_name.png" alt="my_name" class="my_name">
+        </section>
+        <section class="avatar_section">
+          <div class="avatar">
+            <img class="avatar_image" src="./images/robot_stage5.png" alt="Avatar iamge">
+          </div>
+          <section class="end_of_header_section">
+            <div class="conter_color_line"></div>
+            <div class="front-end_developer_text">
+              <h1>Front-end developer(junior)</h1>
+            </div>
+          </section>
+        </section>
+      </div>
     </header>
 
     <main>
-
+      <div class="background_main">
+        <div class="main_text" id="about_me">
+          <section class="room">
+            <div class="room_background" onmousemove="mouse_position(event)">
+              <div class="content">
+                <div class="frontWall">
+                  <section class="about_me">
+                    <h2>About me</h2>
+                    <p>I'm 16 years schoolboy, who want to learn new skills. I want to learn programming because i want to find a job after graduating a school. I also very creative person. I have been painting since i was 5 years old. I have also can play on piano. I don't have a lot of exprianse, but i will work on that problem.</p>
+                  </section>
+                </div>
+                <div class="leftWall">
+                  <section class="languages_section">
+                    <div>
+                      <h2>Languages</h2>
+                      <ul class="Languages_list">
+                        <li>Ukrainian(native)</li>
+                        <li>Russian(native)</li>
+                        <li>English(A2)</li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="rightWall">
+                  <section class="my_education_section">
+                    <div>
+                      <h2>Education</h2>
+                      <p>I have finished<br>10 years of school<br>RS PreSchool(in progres)</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="floor"></div>
+             </div>
+            </div>
+          </section>
+          <section class="skills_section" id="skills">
+            <div>
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA SCRIPT</li>
+              </ul>
+            </div>
+          </section>
+          <section class="example_of_code_section">
+            <div>
+              <h2>Code</h2>
+              <p>function Counter(n){<br>&nbsp&nbsplet counter = 0;<br>&nbsp&nbspfor(let i = 0; i = n; 1++){<br>&nbsp&nbsp&nbsp&nbspcounter++;<br>&nbsp&nbsp}<br>}</p>
+            </div>
+          </section>
+          <section class="projects_section">
+            <div>
+              <h2>Projects</h2>
+              <div class="project1"></div>
+              <div class="project2"></div>
+              <div class="project3"></div>
+              <div class="project4"></div>
+            </div>
+          </section>
+          <section class="contacts_section" id="contacts">
+            <div>
+              <h2>Contacts</h2>
+              <ul class="contacts">
+                <li><a href="https://discordapp.com/users/361853572448518144/">Discord</a></li>
+                <li>Location: <a href="https://www.google.com/maps/place/Koog+aan+de+Zaan/@52.461534,4.8003618,15z/data=!3m1!4b1!4m5!3m4!1s0x47c5fc945394b93f:0xd1ee71151d9fe2a6!8m2!3d52.4607871!4d4.8047292">Koog ann de Zaan/Netherland</a></li>
+                <li>Email: kostaberezin13@gmail.com</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
 
-    <footer id="end_of_site">
+    <footer id="footer">
+      <nav>
         <div class="footer_information_end">
-            <div class="year">2022</div>
-            <span class="name_companie" >GONeBer&#174</span>
-            <a href="https://github.com/KostaVanga" target="_blank" class="link_to_GitHub">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715" alt="gitHub_picture" class="gitHub_picture" height="auto" >
-            </a>
-            <a href="https://app.rs.school/" >
-                <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool_logo" height="auto" class="rsschool_logo">
-            </a>
+          <div class="year">2022</div>
+          <div class="name_companie">GON<small>e</small>B<small>er</small>&#174;</div>
+          <a class="link_to_GitHub" href="https://github.com/KostaVanga" target="_blank">
+            <img class="gitHub_picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715" alt="gitHub_picture">
+          </a>
+          <a href="https://app.rs.school/" target="_blank">
+            <img class="rsschool_logo" src="https://rs.school/images/rs_school_js.svg" alt="rsschool_logo" >
+          </a>
         </div>
+      </nav>
     </footer>
 
-</body>
+  </body>
+  <script src="./main.js"></script>
 </html>

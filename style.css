@@ -1,62 +1,263 @@
+  /*font-family: 'Fredoka One', cursive;*/
+:root{
+  --super-light:     #E4D1B9  ;
+  --light:     #8FBDD3  ;
+  --light-dark:    #8a6343;
+  --text: #BE8C63;
+  --dark:     #4d3021;
+  --filter: invert(63%) sepia(23%) saturate(731%) hue-rotate(345deg) brightness(89%) contrast(88%);
+}
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-    background-color: #CEE5D0;
-    font-family: 'Fredoka One', cursive;
+  background-color: var(--light);
+  font-family: 'Fredoka One', cursive;
+}
+html{
+  scroll-behavior: smooth; 
+}
+/*--------------------------------------header styles----------------------------------------*/
+
+header .header_nav{
+  position: fixed;
+  z-index: 4;
+  height: 3.5vw;
+  width: 100%;
+  background-color: var(--dark);
+}
+header .name_companie_nav{
+  color: var(--text);
+  font-size: 2vw;
+  position: absolute;
+  left: 12.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+header .about_me_nav{
+  color: var(--text);
+  font-size: 1.25vw;
+  position: absolute;
+  left: 69.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+header .skills_nav{
+  color: var(--text);
+  font-size: 1.25vw;
+  position: absolute;
+  left: 78.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+header .contacts_nav{
+  color: var(--text);
+  font-size: 1.25vw;
+  position: absolute;
+  left: 87.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+header .background_for_my_name{
+  position: absolute;
+  z-index: 0.5;
+  border-radius: 50%;
+  top: 18vw;
+  left: 28vw;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  width: 43vw;
+  height: 17vw;
+  background-color: var(--dark);
+}
+.my_name{
+	position: absolute;
+  top: 20.5vw;
+  left: 29.5vw;
+  filter: var(--filter);
+  transform: translate(-50%, -50%) rotate(-20deg);
+	z-index: 1;
+  height: 40vw;
+  width: 40vw;
+}
+header .header{
+  width: 100%;
+}
+header .height_of_header{
+	height: 57vw;
+}
+header .conter_color_line{
+  position: relative;
+  top: -24vw;
+  width: 100%;
+  height: 35vw;
+  background-color: var(--light-dark);
+}
+header .avatar{
+	text-align: right;
+  z-index: 2;
+}
+header .avatar_image{
+	height: 60vw;
+	width: auto;
+  z-index: 2;
+	object-fit: cover;
+  border-radius: 10px;
+}
+header .avatar{
+  position: relative;
+	text-align: right;
+  z-index: 2;
+}
+header .front-end_developer_text{
+  position: absolute;
+  top: 34vw;
+  left: 7.5vw;
+  z-index:3;
+  font-size: 1vw;
+  color: var(--dark);
+}
+header .avatar_image{
+	height: 60vw;
+	width: auto;
+  z-index: 2;
+	object-fit: cover;
+  border-radius: 10px;
+}
+/*-------------------------------------main styles--------------------------------------------*/
+main .background_main{
+	min-height: 50vw;
+	background-color: var(--super-light);
 }
 
+main .main_text{
+  margin-left: 0vw;/*7.6vw*/
+  margin-right: 0vw;
+  color: var(--dark);
+}
+.room_background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  perspective: 460px;
+  perspective-origin: 50% 57%;
+  overflow: hidden;
 
-
-
-
-
-
-/*footer style*/
-footer #end_of_site{
-    width: 100%;
+}
+.content {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.frontWall {
+  position: absolute;
+  background-color: rgb(240, 240, 240);
+  width: 33em;
+  height: 14em;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%) translateZ(-5em);
+  z-index: 1;
+}
+ .leftWall{
+  position: absolute;
+  background-color: rgb(235, 233, 233);
+  width: 12.5em;
+  height: 14em;
+  top: 50%;
+  left:-21.5em;
+  transform: translateY(-50%) rotateY(-90deg) rotateX(180deg) rotateZ(180deg);
+  z-index: 2;
+}
+.rightWall{
+  position: absolute;
+  background-color: rgb(223, 223, 223);
+  width: 12.5em;
+  height: 14em;
+  top: 50%;
+  transform: translateY(-50%) rotateY(90deg) rotateX(180deg) rotateZ(180deg);
+  left:8.5em;
+  z-index: 2;
+}
+.floor {
+  background-color: var(--super-light);
+  width: 35em;
+  height: 20em;
+  top: 3em;
+  z-index: 0;
+  position: absolute;
+  transform:
+    translate(-50%, -50%)
+    rotateX(90deg)
+    translateZ(-3em);
+}
+.languages_section{
+  text-align: right;
+  margin: 5vw;
+}
+.Languages_list{
+  list-style-type: none;
+}
+.about_me{
+  margin: 5vw;
+}
+.my_education_section{
+  margin: 5vw;
+}
+/*-------------------------------------footer styles------------------------------------------*/
+footer #footer{
+  top: 100%;
+  height: 100%;
+	width: 100%;
 }
 
 .footer_information_end{
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    top: 100%;
-    background-color: #5E454B;
+  position: relative;
+  bottom: 0%;
+  top: 100%;
+  width: 100%;
+  height: 4.7vw;
+  background-color: var(--dark);
 }
 footer .name_companie{
-    color: #D8B384;
-    font-size: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  color: var(--text);
+  font-size: 2vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 footer .rsschool_logo{
-    width: 7%;
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-    filter: invert(78%) sepia(38%) saturate(351%) hue-rotate(351deg) brightness(89%) contrast(88%);
+	height: auto;
+  width: 7%;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  filter: var(--filter);
 }
 footer .link_to_GitHub{
-    position: absolute;
-    top: 50%;
-    left: 92%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  transform: translate(-50%, -50%);
 }
 footer .year{
-    color: #D8B384;
-    font-size: 1.3vw;
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    transform: translate(-50%, -50%);
+  color:var(--text);
+  font-size: 1.1vw;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
 }
 footer .gitHub_picture{
-    width: 30%;
-    filter: invert(78%) sepia(38%) saturate(351%) hue-rotate(351deg) brightness(89%) contrast(88%);
+	height: auto;
+  width: 30%;
+  filter: var(--filter);
 }
