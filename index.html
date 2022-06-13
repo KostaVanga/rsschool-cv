@@ -15,23 +15,21 @@
 
     <header class="header" id="header">
       <div class="height_of_header" >
-        <section class="nav_section">
-          <div class="header_nav">
-            <nav>
-              <ul>
-                <li><a class="name_companie_nav" href="#header">GON<small>e</small>B<small>er</small>&#174;</a></li>
-                <li><div class="box_about_me_nav"><a class="about_me_nav" href="#about_me">About me</a></div></li>
-                <li><div class="box_skills_nav"><a class="skills_nav" href="#skills">Skills</a></div></li>
-                <li><div class="box_contacts_nav"><a class="contacts_nav" href="#contacts">Contacts</a></div></li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-        <section class="my_name_section">
+        <div class="header_nav">
+          <nav>
+            <ul>
+              <li><a class="name_companie_nav" href="#header">GON<small>e</small>B<small>er</small>&#174;</a></li>
+              <li><div class="box_about_me_nav"><a class="about_me_nav" href="#about_me">About me</a></div></li>
+              <li><div class="box_skills_nav"><a class="skills_nav" href="#skills">Skills</a></div></li>
+              <li><div class="box_contacts_nav"><a class="contacts_nav" href="#contacts">Contacts</a></div></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="my_name_section">
           <div class="background_for_my_name"></div>
           <img src="./images/my_name.png" alt="my_name" class="my_name">
-        </section>
-        <section class="avatar_section">
+        </div>
+        <div class="avatar_section">
           <div class="avatar">
             <img class="avatar_image" src="./images/robot_stage5.png" alt="Avatar iamge">
           </div>
@@ -41,14 +39,14 @@
               <h1>Front-end developer(junior)</h1>
             </div>
           </section>
-        </section>
+        </div>
       </div>
     </header>
 
     <main>
       <div class="background_main">
         <div class="main_text" id="about_me">
-          <section class="room">
+          <div class="room">
             <div class="room_background" onmousemove="mouse_position(event)">
               <div class="content">
                 <div class="frontWall">
@@ -79,7 +77,7 @@
                 </div>
              </div>
             </div>
-          </section>
+          </div>
           <section class="skills_section" id="skills">
             <div class="skills_div">
               <h2 class="skills_h2">Skills</h2>
@@ -99,7 +97,7 @@
             <div>
               <h2 class="code_text">Code</h2>
               <hr>
-              <p class="example_of_code">function Counter(n){<br>&nbsp&nbsplet counter = 0;<br>&nbsp&nbspfor(let i = 0; i = n; 1++){<br>&nbsp&nbsp&nbsp&nbspcounter++;<br>&nbsp&nbsp}<br>}</p>
+              <p class="example_of_code">function Counter(n){<br>&nbsp;&nbsp;let counter = 0;<br>&nbsp;&nbsp;for(let i = 0; i = n; 1++){<br>&nbsp;&nbsp;&nbsp;&nbsp;counter++;<br>&nbsp;&nbsp;}<br>}</p>
             </div>
           </section>
           <section class="projects_section">
@@ -146,6 +144,6 @@
       </nav>
     </footer>
 
+    <script src="./main.js"></script>
   </body>
-  <script src="./main.js"></script>
 </html>
