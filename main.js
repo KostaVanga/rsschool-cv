@@ -12,11 +12,3 @@ function mouse_position(event){
     content.style.transform = rotateY;
 };
 
-
-function Counter(n){
-    let counter = 0;
-    for(let i = 0; i = n; 1++){
-       counter++;
-    }
-}
-
